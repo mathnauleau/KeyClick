@@ -70,6 +70,7 @@ zig cc -target x86_64-windows-gnu -O2 -s -Wl,--subsystem,windows keyclick2.c -o 
 
 - `keyclick2.exe`: the current build (settings window, tray, animated cat)
 - `keyclick2.c`, `cat_frames.h`: its source; the frames were generated from the sprite in `tools/make_cat34.py`
+- `clickkey.ahk`: no-install alternative for PCs that block the `.exe` (needs [AutoHotkey v2](https://www.autohotkey.com)); same key-to-click mapping, no window
 - `v1/`: the first, tray-only version with a fixed key (`keyclick.c`, `keyclick.exe`)
 - `tools/make_cat34.py`: draws the pixel cat and writes the GIF (needs Pillow)
 - `art/cat34.gif`: the cat animation (12 frames, transparent)
