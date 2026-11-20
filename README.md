@@ -4,6 +4,8 @@ Turn any key on your keyboard into a mouse button. By default it is the key left
 
 Useful as an accessibility aid: pair it with Windows **Mouse Keys** (move the pointer with the numpad, click with your chosen key) or with any other pointing device that moves but can't click comfortably.
 
+<p align="center"><img src="art/keyclick-window.gif" width="520" alt="The KeyClick settings window: on/off switch, key, click type, hold to drag, pause shortcut, start with Windows, and a pixel cat blinking at the bottom"></p>
+
 > **Status:** built and compiled on Linux with Zig and checked for build errors, but not yet tested on a real Windows machine. Please report anything odd.
 
 ## Requirements
@@ -75,3 +77,4 @@ zig cc -target x86_64-windows-gnu -O2 -s -Wl,--subsystem,windows keyclick2.c -o 
 - `v1/`: the first, tray-only version with a fixed key (`keyclick.c`, `keyclick.exe`)
 - `tools/make_cat34.py`: draws the pixel cat and writes the GIF (needs Pillow)
 - `art/cat34.gif`: the cat animation (12 frames, transparent)
+- `art/keyclick-window.gif`: the settings window animation shown at the top of this README
